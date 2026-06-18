@@ -5,6 +5,11 @@ body {
     color: white;
     text-align: center;
     font-family: "Hanken Grotesk", sans-serif;
+    display: grid;
+    align-content: space-between;
+}
+
+.top {
     margin-top: 5rem;
 }
 
