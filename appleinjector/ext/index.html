@@ -7,10 +7,21 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="center">
-        <h2>Launching AppleInjector...</h2>
-        <p>Not launching? <button id="go">click here</button>.</p>
-        <p>You don't have the shortcut? <a href="#">add it here</a>.</p>
-    </div>
+    <img src="https://shortcuty.app/uploads/security/2026/06/1df3dc4c-b6ce-4603-8ff2-e602b5c7ac86.png" alt="" srcset="">
+    <h1>AppleInjector</h1>
+    <a class="btn" id="go">Launch Shortcut</a>
+    <p style="margin-top: 10rem;">You don't have the shortcut? <a href="https://browse.shortcuty.app/shortcut/70953c10-fffb-4c82-9614-eb270d7b69d5">add it here</a>.</p>
 </body>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const run = params.get("run");
+    const text = params.get("text");
+
+    const finalText = text ? `${run},${text}` : run;
+
+    const url = `shortcuts://run-shortcut?name=AppleInjector&input=text&text=${encodeURIComponent(finalText)}`;
+
+    document.getElementById("go").setAttribute("href", url);
+</script>
 </html>
