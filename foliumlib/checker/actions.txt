@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.getmyworkflows</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>UUID</key>
+		<string>D715B9E2-437C-41C1-931C-CA7A93B68E39</string>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.filter.files</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>UUID</key>
+		<string>9BDC5159-6264-4042-BA10-28B037331AB6</string>
+		<key>WFContentItemFilter</key>
+		<dict>
+			<key>Value</key>
+			<dict>
+				<key>WFActionParameterFilterPrefix</key>
+				<integer>1</integer>
+				<key>WFActionParameterFilterTemplates</key>
+				<array>
+					<dict>
+						<key>Operator</key>
+						<integer>4</integer>
+						<key>Property</key>
+						<string>Name</string>
+						<key>Removable</key>
+						<true/>
+						<key>Values</key>
+						<dict>
+							<key>String</key>
+							<string>FoliumLib</string>
+							<key>Unit</key>
+							<integer>4</integer>
+						</dict>
+					</dict>
+				</array>
+				<key>WFContentPredicateBoundedDate</key>
+				<false/>
+			</dict>
+			<key>WFSerializationType</key>
+			<string>WFContentPredicateTableTemplate</string>
+		</dict>
+		<key>WFContentItemInputParameter</key>
+		<dict>
+			<key>Value</key>
+			<dict>
+				<key>OutputName</key>
+				<string>I miei comandi rapidi</string>
+				<key>OutputUUID</key>
+				<string>D715B9E2-437C-41C1-931C-CA7A93B68E39</string>
+				<key>Type</key>
+				<string>ActionOutput</string>
+			</dict>
+			<key>WFSerializationType</key>
+			<string>WFTextTokenAttachment</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.conditional</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>8C3C22E8-22C5-46D2-8507-97D13F703D4A</string>
+		<key>WFCondition</key>
+		<integer>101</integer>
+		<key>WFControlFlowMode</key>
+		<integer>0</integer>
+		<key>WFInput</key>
+		<dict>
+			<key>Type</key>
+			<string>Variable</string>
+			<key>Variable</key>
+			<dict>
+				<key>Value</key>
+				<dict>
+					<key>OutputName</key>
+					<string>File</string>
+					<key>OutputUUID</key>
+					<string>9BDC5159-6264-4042-BA10-28B037331AB6</string>
+					<key>Type</key>
+					<string>ActionOutput</string>
+				</dict>
+				<key>WFSerializationType</key>
+				<string>WFTextTokenAttachment</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.gettext</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>UUID</key>
+		<string>4B7B1941-3193-4C69-A246-E825526DB7E4</string>
+		<key>WFTextActionText</key>
+		<string>🍃 FoliumLib
+
+This shortcut requires FoliumLib to work properly.
+
+FoliumLib is a Shortcut library that provides shared functions and utilities used by other shortcuts.
+
+If you don’t have it installed yet, you can add it for free and continue using this shortcut.</string>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.choosefrommenu</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>3C5F6F4C-82A5-4B5B-A6AA-79A120EF31CE</string>
+		<key>WFControlFlowMode</key>
+		<integer>0</integer>
+		<key>WFMenuItems</key>
+		<array>
+			<string>📥 Add it now!</string>
+			<string>❌ Quit</string>
+		</array>
+		<key>WFMenuPrompt</key>
+		<dict>
+			<key>Value</key>
+			<dict>
+				<key>attachmentsByRange</key>
+				<dict>
+					<key>{0, 1}</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Testo</string>
+						<key>OutputUUID</key>
+						<string>4B7B1941-3193-4C69-A246-E825526DB7E4</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+				</dict>
+				<key>string</key>
+				<string>￼</string>
+			</dict>
+			<key>WFSerializationType</key>
+			<string>WFTextTokenString</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.choosefrommenu</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>3C5F6F4C-82A5-4B5B-A6AA-79A120EF31CE</string>
+		<key>WFControlFlowMode</key>
+		<integer>1</integer>
+		<key>WFMenuItemTitle</key>
+		<string>📥 Add it now!</string>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.showwebpage</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>UUID</key>
+		<string>ECD74FB6-5A5F-42B1-839C-B23B71EEB060</string>
+		<key>WFURL</key>
+		<string>https://shortcuty.app/api/shortcuts/70953c10-fffb-4c82-9614-eb270d7b69d5/get</string>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.exit</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict/>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.choosefrommenu</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>AED856D7-BB8D-4CCB-A5DB-3514CDB241CA</string>
+		<key>WFControlFlowMode</key>
+		<integer>1</integer>
+		<key>WFMenuItemTitle</key>
+		<string>❌ Quit</string>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.exit</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict/>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.choosefrommenu</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>03C6812F-BDB3-43C7-93F1-CB47EFA7D7D8</string>
+		<key>WFControlFlowMode</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActionIdentifier</key>
+	<string>is.workflow.actions.conditional</string>
+	<key>WFWorkflowActionParameters</key>
+	<dict>
+		<key>GroupingIdentifier</key>
+		<string>190650EB-5C32-458A-89D4-6569B413DC0F</string>
+		<key>WFControlFlowMode</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>
