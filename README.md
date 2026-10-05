@@ -1,3 +1,2 @@
-hello
-![header](https://kleo08s.lol/header.svg)
-k
+## Website
+This is just my website there's nothing to say
