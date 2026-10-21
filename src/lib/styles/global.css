@@ -1,1 +1,12 @@
+:root {
+  --primary: #8b5cf6;
+  --text: #fff;
+  --radius: 1rem;
 
+  --background: color-mix(in srgb, var(--primary), black 90%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
