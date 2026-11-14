@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@1.1.1 create --template minimal --types ts --add prettier eslint --install npm .
+npx sv@1.3.0 create --template minimal --types ts --add prettier eslint --install npm .
 ```
 
 ## Adding features
