@@ -22,7 +22,7 @@
     const run = params.get("run");
     const text = params.get("text");
 
-    const finalText = text ? `${run},${text}` : run;
+    const finalText = text ? `${run}/${text}` : run;
 
     const url = `shortcuts://run-shortcut?name=AppleInjector&input=text&text=${encodeURIComponent(finalText)}`;
 
